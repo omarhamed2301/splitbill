@@ -48,7 +48,7 @@ export default function App() {
   return (
     <div className="friendsList">
       <div className="mainTitle text-center">
-        <h1>Spend-'N-Split</h1>
+        <h1>FairShare</h1>
         <p className="mb-5">
           Split your expenses evenly among friends, and family.
         </p>
