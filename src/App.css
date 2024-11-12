@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+img{
+  width: 100%;
+  border-radius: 50%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.red{
+  color: red;
+  font-weight: bold;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.green{
+  color: rgb(149, 221, 42);
+  font-weight: bold;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.friendsList{
+  padding: 20px 0;
+}
+.friendsList li{
+  padding: 15px 10px;
+  border-radius: 7px;
+  margin-bottom: 5px;
+  transition: 0.3s ease-in-out;
+}
+.listRow{
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.friendsList li:hover{
+  background-color: rgb(252, 210, 217);
+}
+.activeSelection{
+  background-color: rgb(252, 210, 217);
+}
+.addBtn{
+  text-align: end;
+  padding: 10px 30px;
+}
+.addFriendForm{
+  padding: 20px 30px;
+  border-radius: 7px;
+  background-color: rgb(252, 210, 217);
+}
+.addFriendForm h6{
+  margin-bottom: 35px;
+}
+.addFriendForm input{
+  margin-bottom: 10px;
+}
+.billForm{
+  padding: 20px 70px;
+  border-radius: 7px;
+  background-color: rgb(252, 210, 217);
+}
+.billForm h2{
+  margin-bottom: 25px;
+}
+.billForm .billValue{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.billForm .billValue select{
+  border: none;
+}
+.billForm .splitBtn{
+  margin-top: 20px;
+  text-align: end;
+}
+.billForm h2{
+  text-transform: uppercase;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width:600px){
+  ul{
+    padding: 0 !important;
   }
-  to {
-    transform: rotate(360deg);
+  .billForm{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
   }
 }
