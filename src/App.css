@@ -79,4 +79,7 @@ img{
     width: 100%;
     height: auto;
   }
+  .addFriendForm h6{
+    margin-bottom: 7px;
+  }
 }
